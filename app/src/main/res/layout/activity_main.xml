@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Temperature Converter"
+                android:textColor="#fff"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:hint="Enter you desire value"
+                android:background="@drawable/rectangle_round_stroke_primary"
+                android:text=""
+                android:inputType="number"
+                android:textSize="20sp"
+
+                />
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Celsius to Fahrenheit" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Fahrenheit to Celsius" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Fahrenheit to Kelvin" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/Button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Convert"
+                android:textSize="20sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginBottom="50dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
